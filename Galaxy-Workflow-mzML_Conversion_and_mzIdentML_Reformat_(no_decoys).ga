@@ -1,0 +1,275 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "mzML Conversion and mzIdentML Reformat (no decoys)", 
+    "steps": {
+        "0": {
+            "annotation": "1", 
+            "content_id": "cptacraw", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "resource"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "sizehash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "md5hash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "sha1hash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "user"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Download CPTAC data files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "raw"
+                }
+            ], 
+            "position": {
+                "left": 148, 
+                "top": 245.5
+            }, 
+            "post_job_actions": {
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "raw"
+                    }, 
+                    "action_type": "ChangeDatatypeAction", 
+                    "output_name": "output"
+                }, 
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "cptacraw", 
+            "tool_state": "{\"__page__\": 0, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "e9bbde2d-3265-4d53-85cc-4b0cd4d7391e", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "2", 
+            "content_id": "cptacraw", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "resource"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "sizehash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "md5hash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "sha1hash"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "user"
+                }, 
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Download CPTAC data files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "raw"
+                }
+            ], 
+            "position": {
+                "left": 150, 
+                "top": 362.5
+            }, 
+            "post_job_actions": {
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "psm"
+                    }, 
+                    "action_type": "ChangeDatatypeAction", 
+                    "output_name": "output"
+                }, 
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "cptacraw", 
+            "tool_state": "{\"__page__\": 0, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "78bfa421-4f1f-4522-9392-e0bad2629016", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "msconvert_raw_pulsar", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {
+                "input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MSConvert RAW (Pulsar - Windows)", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "MSConvert RAW (Pulsar - Windows)", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "mzml"
+                }
+            ], 
+            "position": {
+                "left": 422, 
+                "top": 257
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "msconvert_raw_pulsar", 
+            "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"version\\\": \\\"ProteoWizard\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "57ba269e-ffc9-4b71-9913-521d1dd71d20", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "fb167fcc-771a-40b4-9fe3-75489d4667b9"
+                }
+            ]
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "mzidreformat", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {
+                "input": {
+                    "id": 1, 
+                    "output_name": "output"
+                }, 
+                "spectra": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Reformat PSM file as CPTAC mzid.", 
+                    "name": "input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Reformat PSM file as CPTAC mzid.", 
+                    "name": "spectra"
+                }
+            ], 
+            "label": null, 
+            "name": "Reformat PSM file as CPTAC mzid.", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "mzid.gz"
+                }
+            ], 
+            "position": {
+                "left": 742, 
+                "top": 318.5
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "mzidreformat", 
+            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"false\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"seqconfig\\\": \\\"seqdb.20171204.ini\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "0bdc3328-1d01-4d4f-950a-3f9382db996d", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "a19b188a-4c93-4a40-b12f-95bf1d187233"
+                }
+            ]
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "filecksums1", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {
+                "files_0|input": {
+                    "id": 2, 
+                    "output_name": "output"
+                }, 
+                "files_1|input": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Compute checksums for files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "cksum"
+                }
+            ], 
+            "position": {
+                "left": 1057.5, 
+                "top": 230
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "filecksums1", 
+            "tool_state": "{\"files\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__page__\": null, \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "4165ef8c-a570-48be-8670-8e788356f2b1", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "2fcdf832-090f-47a4-a03e-a2cc43cde004"
+                }
+            ]
+        }
+    }, 
+    "uuid": "bb5a2fa1-a59a-4f3e-8575-980ebea4494b"
+}

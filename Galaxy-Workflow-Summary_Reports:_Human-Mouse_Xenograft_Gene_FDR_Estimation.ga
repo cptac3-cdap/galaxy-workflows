@@ -1,0 +1,230 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Summary Reports: Human-Mouse Xenograft Gene FDR Estimation", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [
+                {
+                    "description": "", 
+                    "name": "mzIdentML PSM Datafiles"
+                }
+            ], 
+            "label": "mzIdentML PSM Datafiles", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 174, 
+                "top": 200
+            }, 
+            "tool_id": null, 
+            "tool_state": "{\"name\": \"mzIdentML PSM Datafiles\"}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "bd5fa330-9385-4417-a787-8c181c291b29", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "eefec2e1-162c-4bf2-9cc6-c85352142ac0"
+                }
+            ]
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "cdapreports_loadall", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {
+                "input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Import PSMs to PSMDb database", 
+                    "name": "sample"
+                }, 
+                {
+                    "description": "runtime parameter for tool Import PSMs to PSMDb database", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Import PSMs to PSMDb database", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "psmdb"
+                }, 
+                {
+                    "name": "samplecsv", 
+                    "type": "csv"
+                }
+            ], 
+            "position": {
+                "left": 374.5, 
+                "top": 276
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }, 
+                "HideDatasetActionsamplecsv": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "samplecsv"
+                }
+            }, 
+            "tool_id": "cdapreports_loadall", 
+            "tool_state": "{\"__page__\": 0, \"alignments_selector\": \"{\\\"pracc\\\": \\\"RefSeqUniProtIsoformBroadArtifact\\\", \\\"alignments\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"labels\": \"[]\", \"maxrank\": \"\\\"1\\\"\", \"sample\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"peplen\": \"\\\"7\\\"\", \"psmthresh\": \"\\\"1.0\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "98d0df6b-5aa3-4f8d-b842-ed0626b4e146", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "cdapreports_labeldecoy", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {
+                "input": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Label Decoy Proteins and Peptides", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Label Decoy Proteins and Peptides", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "psmdb"
+                }
+            ], 
+            "position": {
+                "left": 626.5, 
+                "top": 511
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "cdapreports_labeldecoy", 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"__page__\": 0}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "431ce152-1b14-40c5-a4cd-a647f1c44aa1", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "cdapreports_genemap", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {
+                "input": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Group proteins by gene", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Group proteins by gene", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "psmdb"
+                }
+            ], 
+            "position": {
+                "left": 876, 
+                "top": 675
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "cdapreports_genemap", 
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\", \"__page__\": null}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "ab875ec0-a8f5-4ed0-ad2f-4d3e845f7d0e", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "cdapreports_parsnipmayug", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {
+                "input": {
+                    "id": 3, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Gene inference by parsimony with FDR estimation", 
+                    "name": "input"
+                }, 
+                {
+                    "description": "runtime parameter for tool Gene inference by parsimony with FDR estimation", 
+                    "name": "specfdr"
+                }
+            ], 
+            "label": null, 
+            "name": "Gene inference by parsimony with FDR estimation", 
+            "outputs": [
+                {
+                    "name": "mayu", 
+                    "type": "tabular"
+                }
+            ], 
+            "position": {
+                "left": 1057.5, 
+                "top": 813
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "cdapreports_parsnipmayug", 
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"speccnt\": \"\\\"2\\\"\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "69d7df5c-119b-402f-a0c9-3d133cfea2a4", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "mayu", 
+                    "uuid": "e19c135f-9668-4d26-8a6d-6f14eb54ec85"
+                }
+            ]
+        }
+    }, 
+    "uuid": "decce75b-dd45-4f5f-a95b-5eccf2810121"
+}

@@ -1,0 +1,123 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "Raw to mzML.gz", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": "cptacraw", 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Download CPTAC data files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "raw"
+                }
+            ], 
+            "position": {
+                "left": 200, 
+                "top": 200
+            }, 
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {}, 
+                    "action_type": "HideDatasetAction", 
+                    "output_name": "output"
+                }
+            }, 
+            "tool_id": "cptacraw", 
+            "tool_state": "{\"__page__\": 0, \"resource\": \"\\\"url\\\"\", \"sizehash\": \"\\\"\\\"\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"\\\"\\\"\", \"sha1hash\": \"\\\"\\\"\", \"user\": \"\\\"\\\"\", \"input\": \"\\\"\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "7947529b-1648-4e9e-a25f-9287973c014d", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": "msconvert_raw_pulsar", 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {
+                "input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MSConvert RAW (Pulsar - Windows)", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "MSConvert RAW (Pulsar - Windows)", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "mzml"
+                }
+            ], 
+            "position": {
+                "left": 322.5, 
+                "top": 330
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "msconvert_raw_pulsar", 
+            "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"version\\\": \\\"ProteoWizard\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "b764b1cc-6228-40db-b08b-33915477cfae", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "1bb72cf5-840a-4e93-9a79-83c827b3fa71"
+                }
+            ]
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": "filecksums1", 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {
+                "files_0|input": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [], 
+            "label": null, 
+            "name": "Compute checksums for files", 
+            "outputs": [
+                {
+                    "name": "output", 
+                    "type": "cksum"
+                }
+            ], 
+            "position": {
+                "left": 581.5, 
+                "top": 530
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "filecksums1", 
+            "tool_state": "{\"files\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__page__\": null, \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "81d6f7d0-6abf-4492-ba11-684cf7b811b9", 
+            "workflow_outputs": [
+                {
+                    "label": null, 
+                    "output_name": "output", 
+                    "uuid": "6f95a7d3-4f3d-43f9-bef8-3f577895c6f0"
+                }
+            ]
+        }
+    }, 
+    "uuid": "a8c13a6c-ef09-4816-bcb6-b705055452da"
+}
