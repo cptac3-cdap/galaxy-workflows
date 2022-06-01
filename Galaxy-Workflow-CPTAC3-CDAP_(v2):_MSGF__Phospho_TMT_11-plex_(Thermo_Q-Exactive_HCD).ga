@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true",
     "annotation": "",
     "format-version": "0.1",
-    "name": "CPTAC3-CDAP (v2): MSGF+ TMT 11-plex (Thermo Q-Exactive HCD)",
+    "name": "CPTAC3-CDAP (v2): MSGF+ Phospho TMT 11-plex (Thermo Q-Exactive HCD)",
     "steps": {
         "0": {
             "annotation": "",
@@ -59,7 +59,7 @@
             "tool_state": "{\"__page__\": 0, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "c68419d0-d4b4-44c3-aa3a-013689d897d7",
+            "uuid": "b49ebaf5-88ca-4498-9ef0-935025f29000",
             "workflow_outputs": []
         },
         "1": {
@@ -88,20 +88,20 @@
                 }
             ],
             "position": {
-                "left": 355.5,
-                "top": 348.5
+                "left": 335.5,
+                "top": 368.5
             },
             "post_job_actions": {},
             "tool_id": "msconvert_raw_docker_wine",
             "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"tag\\\": \\\"latest\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "7d9a0ead-57cc-41cd-a7e3-4f0cd96abb5d",
+            "uuid": "7201b664-1622-4fc9-bbd3-c8db6bb4e816",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "67fec92f-4385-44b7-9069-ee41579d5e30"
+                    "uuid": "fa028e6f-8384-48b7-8b9b-4301cf8e3dd6"
                 }
             ]
         },
@@ -135,8 +135,8 @@
                 }
             ],
             "position": {
-                "left": 532,
-                "top": 553
+                "left": 519,
+                "top": 532
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -151,10 +151,10 @@
                 }
             },
             "tool_id": "msgfplus4",
-            "tool_state": "{\"__page__\": null, \"e\": \"\\\"1\\\"\", \"seqdb\": \"\\\"mixed_human_broad-cptac-refseq-human+contaminants_20180629_decoy\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ntt\": \"\\\"1\\\"\", \"common_fixed_modifications\": \"[\\\"C2H3N1O1_C_fix_any_Carbamidomethyl\\\", \\\"229.162932_*_fix_N-term_TMT6plex\\\", \\\"229.162932_K_fix_any_TMT6plex\\\"]\", \"inst\": \"\\\"3\\\"\", \"t\": \"\\\"20.0\\\"\", \"precursor_ion_tol_units\": \"\\\"ppm\\\"\", \"custom_mods\": \"[]\", \"common_variable_modifications\": \"[\\\"O1_M_opt_any_Oxidation\\\"]\", \"advanced\": \"{\\\"memory\\\": \\\"4G\\\", \\\"minCharge\\\": \\\"2\\\", \\\"protocol\\\": \\\"4\\\", \\\"minLength\\\": \\\"6\\\", \\\"num_ptms\\\": \\\"3\\\", \\\"m\\\": \\\"3\\\", \\\"n\\\": \\\"1\\\", \\\"isotope_low\\\": \\\"0\\\", \\\"maxCharge\\\": \\\"3\\\", \\\"maxLength\\\": \\\"40\\\", \\\"addFeatures\\\": \\\"false\\\", \\\"isotope_high\\\": \\\"1\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"e\": \"\\\"1\\\"\", \"seqdb\": \"\\\"mixed_human_broad-cptac-refseq-human+contaminants_20180629_decoy\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ntt\": \"\\\"1\\\"\", \"common_fixed_modifications\": \"[\\\"C2H3N1O1_C_fix_any_Carbamidomethyl\\\", \\\"229.162932_*_fix_N-term_TMT6plex\\\", \\\"229.162932_K_fix_any_TMT6plex\\\"]\", \"inst\": \"\\\"3\\\"\", \"t\": \"\\\"20.0\\\"\", \"precursor_ion_tol_units\": \"\\\"ppm\\\"\", \"custom_mods\": \"[]\", \"common_variable_modifications\": \"[\\\"O1_M_opt_any_Oxidation\\\", \\\"HO3P_S_opt_any_Phospho\\\", \\\"HO3P_T_opt_any_Phospho\\\", \\\"HO3P_Y_opt_any_Phospho\\\"]\", \"advanced\": \"{\\\"memory\\\": \\\"4G\\\", \\\"minCharge\\\": \\\"2\\\", \\\"protocol\\\": \\\"1\\\", \\\"minLength\\\": \\\"6\\\", \\\"num_ptms\\\": \\\"3\\\", \\\"m\\\": \\\"3\\\", \\\"n\\\": \\\"1\\\", \\\"isotope_low\\\": \\\"0\\\", \\\"maxCharge\\\": \\\"3\\\", \\\"maxLength\\\": \\\"40\\\", \\\"addFeatures\\\": \\\"false\\\", \\\"isotope_high\\\": \\\"1\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "fe03a801-e1a7-4280-8654-1ac0cbe6fc78",
+            "uuid": "6649d3b4-f763-4d5d-81a8-7224ec75e72f",
             "workflow_outputs": []
         },
         "3": {
@@ -168,12 +168,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Extract reporter ions from mzML file",
-                    "name": "spectra"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "Extract reporter ions from mzML file",
             "outputs": [
@@ -183,8 +178,8 @@
                 }
             ],
             "position": {
-                "left": 877,
-                "top": 535
+                "left": 849,
+                "top": 441.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -194,10 +189,10 @@
                 }
             },
             "tool_id": "makereporters",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"spectra\": \"null\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "a631144d-0b47-4967-b7ee-cb06545389bc",
+            "uuid": "4835517e-f3a5-4c22-b0f4-3a37bcab3ecf",
             "workflow_outputs": []
         },
         "4": {
@@ -226,8 +221,8 @@
                 }
             ],
             "position": {
-                "left": 716.1666870117188,
-                "top": 702.1666717529297
+                "left": 716.183349609375,
+                "top": 702.183349609375
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -240,7 +235,7 @@
             "tool_state": "{\"i\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"memory\\\": \\\"3G\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "41cd4cc6-caa8-4cf4-92d0-32eb19470b1a",
+            "uuid": "5ea1c7d7-f167-4cc0-8d3c-03ed875e52e5",
             "workflow_outputs": []
         },
         "5": {
@@ -277,8 +272,8 @@
                 }
             ],
             "position": {
-                "left": 1140,
-                "top": 600
+                "left": 878,
+                "top": 532.5
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -291,7 +286,7 @@
             "tool_state": "{\"__page__\": null, \"instrument\": \"\\\"HIRESMS1\\\"\", \"__rerun_remap_job_id__\": null, \"psms\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "1319c422-d2da-4545-b8af-0cd9e5c6fdc6",
+            "uuid": "58077323-2ef6-4a89-8106-ec2ca0c347c2",
             "workflow_outputs": []
         },
         "6": {
@@ -336,8 +331,8 @@
                 }
             ],
             "position": {
-                "left": 1066,
-                "top": 750
+                "left": 1023,
+                "top": 736
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -350,7 +345,7 @@
             "tool_state": "{\"__page__\": null, \"promsreport\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"reporterfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reporters\": \"\\\"tmt11\\\"\", \"threshold\": \"\\\"1.0\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "493503d1-7871-4f8f-abd9-20173eb5288d",
+            "uuid": "c0d8553a-1ade-4726-b7b0-c0fa908d1f6a",
             "workflow_outputs": []
         },
         "7": {
@@ -368,16 +363,7 @@
                     "output_name": "output"
                 }
             },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool Add spectral metadata to PSM file",
-                    "name": "input"
-                },
-                {
-                    "description": "runtime parameter for tool Add spectral metadata to PSM file",
-                    "name": "spectra"
-                }
-            ],
+            "inputs": [],
             "label": null,
             "name": "Add spectral metadata to PSM file",
             "outputs": [
@@ -387,32 +373,83 @@
                 }
             ],
             "position": {
-                "left": 1221.5,
-                "top": 456
+                "left": 1080.5,
+                "top": 566.5
             },
-            "post_job_actions": {},
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
             "tool_id": "addspecmd",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
+            "tool_state": "{\"input\": \"null\", \"__rerun_remap_job_id__\": null, \"spectra\": \"null\", \"__page__\": null}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "351cc52d-0574-403e-b788-98fd53e332a5",
-            "workflow_outputs": [
-                {
-                    "label": null,
-                    "output_name": "output",
-                    "uuid": "d6daa2b4-9a4b-43fd-96bc-be2fa7b9feb4"
-                }
-            ]
+            "uuid": "48959eb6-e01f-495a-875c-04b1d4469114",
+            "workflow_outputs": []
         },
         "8": {
             "annotation": "",
-            "content_id": "mzidreformat",
+            "content_id": "phosphors",
             "errors": null,
             "id": 8,
             "input_connections": {
-                "input": {
+                "mgfinput": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "psminput": {
                     "id": 7,
                     "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PhosphoRS",
+                    "name": "mgfinput"
+                },
+                {
+                    "description": "runtime parameter for tool PhosphoRS",
+                    "name": "psminput"
+                }
+            ],
+            "label": null,
+            "name": "PhosphoRS",
+            "outputs": [
+                {
+                    "name": "psmoutput",
+                    "type": "psm"
+                }
+            ],
+            "position": {
+                "left": 1228.5,
+                "top": 431
+            },
+            "post_job_actions": {},
+            "tool_id": "phosphors",
+            "tool_state": "{\"__page__\": 0, \"mgfinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"fragmode\": \"\\\"HCD\\\"\", \"topn\": \"\\\"0.0\\\"\", \"relint\": \"\\\"0.0\\\"\", \"psminput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"tolerance\": \"\\\"0.05\\\"\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "09183275-4cee-471f-8cee-415f4163eb67",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "psmoutput",
+                    "uuid": "4610e64c-4e26-42f6-ad86-70b6dda6fe4c"
+                }
+            ]
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "mzidreformat",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "input": {
+                    "id": 8,
+                    "output_name": "psmoutput"
                 },
                 "spectra": {
                     "id": 1,
@@ -438,31 +475,31 @@
                 }
             ],
             "position": {
-                "left": 1430,
-                "top": 684.5
+                "left": 1416,
+                "top": 661.5
             },
             "post_job_actions": {},
             "tool_id": "mzidreformat",
             "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "fe55d323-20ce-41dd-a04b-d52c55ceac94",
+            "uuid": "078f6865-9f10-4474-a430-58a002857da2",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "6abfd913-2001-49e7-b5e6-0023dee91aa9"
+                    "uuid": "139adc83-b894-4399-9844-2f4b834a17b0"
                 }
             ]
         },
-        "9": {
+        "10": {
             "annotation": "",
             "content_id": "qcmetrics",
             "errors": null,
-            "id": 9,
+            "id": 10,
             "input_connections": {
                 "mzidinput": {
-                    "id": 8,
+                    "id": 9,
                     "output_name": "output"
                 },
                 "mzmlinput": {
@@ -489,40 +526,40 @@
                 }
             ],
             "position": {
-                "left": 1721.75,
-                "top": 481.25
+                "left": 1755.7833251953125,
+                "top": 481.28334045410156
             },
             "post_job_actions": {},
             "tool_id": "qcmetrics",
             "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "4b132889-7b7b-4a9d-aab1-d48426278707",
+            "uuid": "45975560-c63a-4aba-89d1-e689dcddd65a",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "qcmetrics",
-                    "uuid": "d99a8f67-ebad-4eea-b783-cb04a6b7c844"
+                    "uuid": "81c8f650-0e5a-4710-a794-cd437b168c6b"
                 }
             ]
         },
-        "10": {
+        "11": {
             "annotation": "",
             "content_id": "psmfilecksum",
             "errors": null,
-            "id": 10,
+            "id": 11,
             "input_connections": {
                 "metricsinput": {
-                    "id": 9,
+                    "id": 10,
                     "output_name": "qcmetrics"
                 },
                 "mzidinput": {
-                    "id": 8,
+                    "id": 9,
                     "output_name": "output"
                 },
                 "psminput": {
-                    "id": 7,
-                    "output_name": "output"
+                    "id": 8,
+                    "output_name": "psmoutput"
                 },
                 "specinput": {
                     "id": 1,
@@ -564,12 +601,12 @@
             "tool_state": "{\"__page__\": 0, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"metricsinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"psminput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"specinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "576a75d8-a242-4fdd-ab8b-b75acc1bb77c",
+            "uuid": "97ee7f20-156c-4780-9aca-5961476b3296",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "806d4c19-956a-4a67-8126-64b179386c85"
+                    "uuid": "fc103372-fd1b-4bae-a560-04e5ac70d01a"
                 }
             ]
         }

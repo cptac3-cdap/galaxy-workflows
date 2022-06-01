@@ -1,0 +1,123 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Raw to mzML.gz (DIA - Window Demultiplex)",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": "cptacraw",
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": null,
+            "name": "Download CPTAC data files",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "raw"
+                }
+            ],
+            "position": {
+                "left": 200,
+                "top": 200
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cptacraw",
+            "tool_state": "{\"__page__\": 0, \"resource\": \"\\\"url\\\"\", \"sizehash\": \"\\\"\\\"\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"\\\"\\\"\", \"sha1hash\": \"\\\"\\\"\", \"user\": \"\\\"\\\"\", \"input\": \"\\\"\\\"\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "4c220e2a-6383-4350-aaa0-05bcb954308b",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "msconvert_raw_dia_docker_wine",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool MSConvert DIA RAW (Wine - Docker)",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "MSConvert DIA RAW (Wine - Docker)",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "mzml"
+                }
+            ],
+            "position": {
+                "left": 364,
+                "top": 332.5
+            },
+            "post_job_actions": {},
+            "tool_id": "msconvert_raw_dia_docker_wine",
+            "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"demultiplex\": \"\\\"false\\\"\", \"simAsSpectra\": \"\\\"true\\\"\", \"advanced\": \"{\\\"tag\\\": \\\"latest\\\"}\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "c5df1f6c-d64e-4e9a-afe1-799f9eb8dbba",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "c35e62b1-b478-41f8-acb4-a940bf53bcbb"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "filecksums1",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "files_0|input": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Compute checksums for files",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "cksum"
+                }
+            ],
+            "position": {
+                "left": 581.5,
+                "top": 530
+            },
+            "post_job_actions": {},
+            "tool_id": "filecksums1",
+            "tool_state": "{\"files\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "c3f0c77e-7637-4b4e-9097-ceb374c47e4d",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "a423f6ba-2535-4ab5-ac97-5e9577ff1d18"
+                }
+            ]
+        }
+    },
+    "tags": []
+}
