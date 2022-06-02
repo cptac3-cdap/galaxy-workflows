@@ -245,7 +245,7 @@
                 }
             },
             "tool_id": "OpenMS_PrecursorAbundance",
-            "tool_state": "{\"__page__\": null, \"instrument\": \"\\\"HIRESMS1\\\"\", \"__rerun_remap_job_id__\": null, \"psms\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"instrument\": \"\\\"HIRESMS1\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"psms\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"tag\\\": \\\"latest\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "2892d13d-a04f-4316-b708-39ba18188453",
