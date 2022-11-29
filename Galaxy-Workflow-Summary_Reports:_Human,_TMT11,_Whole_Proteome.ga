@@ -519,13 +519,13 @@
                 },
                 {
                     "label": null,
-                    "output_name": "matrix",
-                    "uuid": "6b39b6b5-83d3-430a-bcad-3182a9e2c801"
+                    "output_name": "accessions",
+                    "uuid": "3d98744e-8adf-4b5d-9a66-640982723504"
                 },
                 {
                     "label": null,
-                    "output_name": "accessions",
-                    "uuid": "3d98744e-8adf-4b5d-9a66-640982723504"
+                    "output_name": "matrix",
+                    "uuid": "6b39b6b5-83d3-430a-bcad-3182a9e2c801"
                 }
             ]
         },

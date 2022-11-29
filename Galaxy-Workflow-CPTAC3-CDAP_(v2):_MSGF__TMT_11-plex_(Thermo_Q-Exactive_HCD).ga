@@ -347,7 +347,7 @@
                 }
             },
             "tool_id": "psmfile_filter",
-            "tool_state": "{\"__page__\": null, \"promsreport\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"reporterfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reporters\": \"\\\"tmt11\\\"\", \"threshold\": \"\\\"1.0\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"promsreport\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"reporterfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reporters\": \"\\\"tmt11+2\\\"\", \"threshold\": \"\\\"1.0\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "493503d1-7871-4f8f-abd9-20173eb5288d",
@@ -443,8 +443,8 @@
             },
             "post_job_actions": {},
             "tool_id": "mzidreformat",
-            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.0\\\", \\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "fe55d323-20ce-41dd-a04b-d52c55ceac94",
             "workflow_outputs": [
@@ -508,9 +508,68 @@
         },
         "10": {
             "annotation": "",
-            "content_id": "psmfilecksum",
+            "content_id": "psmversions",
             "errors": null,
             "id": 10,
+            "input_connections": {
+                "msgfidinput": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "mzidinput": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "mzmlinput": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PSM Analysis Versions",
+                    "name": "msgfidinput"
+                },
+                {
+                    "description": "runtime parameter for tool PSM Analysis Versions",
+                    "name": "mzidinput"
+                },
+                {
+                    "description": "runtime parameter for tool PSM Analysis Versions",
+                    "name": "mzmlinput"
+                }
+            ],
+            "label": null,
+            "name": "PSM Analysis Versions",
+            "outputs": [
+                {
+                    "name": "psmversion",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 1938,
+                "top": 581.5
+            },
+            "post_job_actions": {},
+            "tool_id": "psmversions",
+            "tool_state": "{\"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"msgfidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "441245d8-bb96-49e8-a573-5546f7d2c467",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "psmversion",
+                    "uuid": "02ff9146-8fb1-4f50-ac0f-660723308216"
+                }
+            ]
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "psmfilecksum",
+            "errors": null,
+            "id": 11,
             "input_connections": {
                 "metricsinput": {
                     "id": 9,
