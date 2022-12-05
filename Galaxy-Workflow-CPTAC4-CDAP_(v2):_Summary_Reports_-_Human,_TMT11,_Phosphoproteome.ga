@@ -519,13 +519,13 @@
                 },
                 {
                     "label": null,
-                    "output_name": "matrix",
-                    "uuid": "6b39b6b5-83d3-430a-bcad-3182a9e2c801"
+                    "output_name": "accessions",
+                    "uuid": "f7e59c2f-e969-4341-82d0-cbd32ec7faef"
                 },
                 {
                     "label": null,
-                    "output_name": "accessions",
-                    "uuid": "f7e59c2f-e969-4341-82d0-cbd32ec7faef"
+                    "output_name": "matrix",
+                    "uuid": "6b39b6b5-83d3-430a-bcad-3182a9e2c801"
                 }
             ]
         },
@@ -858,7 +858,7 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Phosphopeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Phosphopeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1",
             "type": "tool",
             "uuid": "50bb584c-f57e-4964-9648-2a9ccb562e50",
@@ -944,7 +944,7 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"PhosphositeCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 1}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"PhosphositeCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 1}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.1",
             "type": "tool",
             "uuid": "f729f954-2242-4525-a263-25019871351b",
