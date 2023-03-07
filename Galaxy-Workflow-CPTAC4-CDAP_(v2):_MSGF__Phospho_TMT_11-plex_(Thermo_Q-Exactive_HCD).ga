@@ -612,8 +612,8 @@
             },
             "post_job_actions": {},
             "tool_id": "psmversions",
-            "tool_state": "{\"msgfloginput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"msgfidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"msgfloginput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"extralines\": \"[{\\\"__index__\\\": 0, \\\"line\\\": \\\"Precursor Peak Integration: OpenMS\\\"}, {\\\"__index__\\\": 1, \\\"line\\\": \\\"Spectral Data Conversion: ProteoWizard/msconvert\\\"}, {\\\"__index__\\\": 2, \\\"line\\\": \\\"Phosphosite Localization: PhosphoRS\\\"}, {\\\"__index__\\\": 3, \\\"line\\\": \\\"OpenMS version: 2.8.0\\\"}, {\\\"__index__\\\": 4, \\\"line\\\": \\\"PhosphoRS version: 1.0.0.0\\\"}]\", \"msgfidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "3dda2487-dd7c-4255-9c55-fe6ca7c0d2a1",
             "workflow_outputs": [

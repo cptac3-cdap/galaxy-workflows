@@ -562,8 +562,8 @@
             },
             "post_job_actions": {},
             "tool_id": "psmversions",
-            "tool_state": "{\"msgfloginput\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 10533}]}\", \"mzidinput\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 10530}]}\", \"mzmlinput\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 10522}]}\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"msgfidinput\": \"{\\\"values\\\": [{\\\"src\\\": \\\"hda\\\", \\\"id\\\": 10530}]}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"msgfloginput\": \"null\", \"mzidinput\": \"null\", \"mzmlinput\": \"null\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"extralines\": \"[{\\\"__index__\\\": 0, \\\"line\\\": \\\"Precursor Peak Integration: ProMS\\\"}, {\\\"__index__\\\": 1, \\\"line\\\": \\\"Spectral Data Conversion: ReAdW4Mascot2\\\"}, {\\\"__index__\\\": 2, \\\"line\\\": \\\"Phosphosite Localization: PhosphoRS\\\"}, {\\\"__index__\\\": 3, \\\"line\\\": \\\"PhosphoRS version: 1.0.0.0\\\"}]\", \"msgfidinput\": \"null\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "330def05-b147-442f-b24e-0934193c1c5f",
             "workflow_outputs": [
