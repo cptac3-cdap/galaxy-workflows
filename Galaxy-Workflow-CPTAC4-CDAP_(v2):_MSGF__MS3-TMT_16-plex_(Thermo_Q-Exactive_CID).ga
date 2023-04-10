@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true",
     "annotation": "",
     "format-version": "0.1",
-    "name": "CPTAC4-CDAP (v2): MSGF+ TMT 16-plex (Thermo Q-Exactive HCD)",
+    "name": "CPTAC4-CDAP (v2): MSGF+ MS3-TMT 16-plex (Thermo Q-Exactive CID)",
     "steps": {
         "0": {
             "annotation": "",
@@ -194,8 +194,8 @@
                 }
             },
             "tool_id": "makereporters",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT16\\\"\", \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT16\\\"\", \"ms3\": \"\\\"true\\\"\", \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "a631144d-0b47-4967-b7ee-cb06545389bc",
             "workflow_outputs": []
