@@ -296,8 +296,8 @@
                 }
             ],
             "position": {
-                "left": 721,
-                "top": 771
+                "left": 722,
+                "top": 769
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -307,8 +307,8 @@
                 }
             },
             "tool_id": "cdapreports_genemap",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prhuman2gene.csv\\\"\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhuman2gene\\\"\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2018-08-10\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "ab875ec0-a8f5-4ed0-ad2f-4d3e845f7d0e",
             "workflow_outputs": []
@@ -350,8 +350,8 @@
                 }
             },
             "tool_id": "cdapreports_assayannotate",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"assaydate\\\": \\\"2018-8-28-11-49\\\"}\", \"__page__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "cc3767a5-667f-4e3e-a7a1-649079938368",
             "workflow_outputs": []
@@ -390,13 +390,13 @@
                 }
             ],
             "position": {
-                "left": 693,
+                "left": 694,
                 "top": 1085
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_parsnipfdr",
-            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"specfdrprecision\": \"\\\"3\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"initspecfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"speccnt\": \"\\\"2\\\"\", \"targetprotfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"genemap\": \"\\\"prhuman2gene.csv\\\"\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"speccnt\": \"\\\"2\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"initspecfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"specfdrprecision\": \"\\\"3\\\"\", \"targetprotfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"genemap\": \"\\\"prhuman2gene\\\"\", \"unique\": \"\\\"2\\\"\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2018-08-10\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "33cbdf9f-d6ea-48d2-8766-081e58f00c77",
             "workflow_outputs": [
@@ -496,7 +496,7 @@
                 }
             ],
             "position": {
-                "left": 998.5,
+                "left": 999.5,
                 "top": 1079
             },
             "post_job_actions": {
@@ -607,8 +607,8 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_mayug",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genemap\": \"\\\"prhuman2gene.csv\\\"\", \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhuman2gene\\\"\", \"__rerun_remap_job_id__\": null, \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2018-08-10\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "1301b325-cc6a-4911-be35-6a1644474553",
             "workflow_outputs": [
@@ -645,7 +645,7 @@
                 }
             ],
             "position": {
-                "left": 1416,
+                "left": 1417,
                 "top": 1371
             },
             "post_job_actions": {

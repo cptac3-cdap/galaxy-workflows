@@ -226,8 +226,8 @@
                 }
             ],
             "position": {
-                "left": 716.166687,
-                "top": 702.166687
+                "left": 716.166672,
+                "top": 702.166672
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -444,7 +444,7 @@
             "post_job_actions": {},
             "tool_id": "mzidreformat",
             "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.0\\\", \\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
-            "tool_version": "1.1",
+            "tool_version": "1.2",
             "type": "tool",
             "uuid": "fe55d323-20ce-41dd-a04b-d52c55ceac94",
             "workflow_outputs": [

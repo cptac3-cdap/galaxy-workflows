@@ -277,7 +277,7 @@
                 }
             ],
             "position": {
-                "left": 716.18335,
+                "left": 716.183334,
                 "top": 702.18335
             },
             "post_job_actions": {
@@ -495,7 +495,7 @@
             "post_job_actions": {},
             "tool_id": "mzidreformat",
             "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.0\\\", \\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
-            "tool_version": "1.1",
+            "tool_version": "1.2",
             "type": "tool",
             "uuid": "078f6865-9f10-4474-a430-58a002857da2",
             "workflow_outputs": [
