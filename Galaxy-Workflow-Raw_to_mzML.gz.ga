@@ -63,8 +63,8 @@
                 }
             ],
             "position": {
-                "left": 326.16668701171875,
-                "top": 332.16668701171875
+                "left": 326.166687,
+                "top": 332.166687
             },
             "post_job_actions": {},
             "tool_id": "msconvert_raw_docker_wine",

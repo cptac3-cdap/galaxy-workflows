@@ -2,10 +2,10 @@
     "a_galaxy_workflow": "true",
     "annotation": "",
     "format-version": "0.1",
-    "name": "CPTAC3-STEMNESS-CDAP: MSGF+ Label-free, no ProMS (Thermo Q-Exactive HCD)",
+    "name": "CPTAC4-CDAP (v2.1): PSM LiftOver for TMT 11-plex (Thermo Q-Exactive HCD)",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "1",
             "content_id": "cptacraw",
             "errors": null,
             "id": 0,
@@ -46,7 +46,7 @@
             ],
             "position": {
                 "left": 200,
-                "top": 233
+                "top": 238
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -56,81 +56,80 @@
                 }
             },
             "tool_id": "cptacraw",
-            "tool_state": "{\"__page__\": 0, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "b49ebaf5-88ca-4498-9ef0-935025f29000",
+            "uuid": "2090e821-3847-4771-a8bb-7d3c62fbfb9b",
             "workflow_outputs": []
         },
         "1": {
-            "annotation": "",
-            "content_id": "ReAdw4Mascot2_raw_pulsar",
+            "annotation": "2",
+            "content_id": "cptacraw",
             "errors": null,
             "id": 1,
-            "input_connections": {
-                "input": {
-                    "id": 0,
-                    "output_name": "output"
-                }
-            },
+            "input_connections": {},
             "inputs": [
                 {
-                    "description": "runtime parameter for tool ReAdw4Mascot2 RAW to MGF (Pulsar - Windows)",
+                    "description": "runtime parameter for tool Download CPTAC data files",
+                    "name": "resource"
+                },
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files",
+                    "name": "sizehash"
+                },
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files",
+                    "name": "md5hash"
+                },
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files",
+                    "name": "sha1hash"
+                },
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files",
+                    "name": "user"
+                },
+                {
+                    "description": "runtime parameter for tool Download CPTAC data files",
                     "name": "input"
                 }
             ],
             "label": null,
-            "name": "ReAdw4Mascot2 RAW to MGF (Pulsar - Windows)",
+            "name": "Download CPTAC data files",
             "outputs": [
                 {
                     "name": "output",
-                    "type": "mgf"
-                },
-                {
-                    "name": "output1",
-                    "type": "mzxml"
-                },
-                {
-                    "name": "reportersfile",
-                    "type": "tabular"
+                    "type": "raw"
                 }
             ],
             "position": {
-                "left": 419.5,
-                "top": 353
+                "left": 200,
+                "top": 425
             },
             "post_job_actions": {
-                "HideDatasetActionms3spectra": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "ms3spectra"
+                "ChangeDatatypeActionoutput": {
+                    "action_arguments": {
+                        "newtype": "psm"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "output"
                 },
                 "HideDatasetActionoutput": {
                     "action_arguments": {},
                     "action_type": "HideDatasetAction",
                     "output_name": "output"
-                },
-                "HideDatasetActionoutput1": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output1"
-                },
-                "HideDatasetActionreportersfile": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "reportersfile"
                 }
             },
-            "tool_id": "ReAdw4Mascot2_raw_pulsar",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"hiaccuracy\": \"\\\"true\\\"\", \"reporters\": \"\\\"NoReporters\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"spsms3\\\": \\\"false\\\", \\\"ms1profile\\\": \\\"false\\\", \\\"version\\\": \\\"ReAdw4Mascot_20180322a\\\"}\"}",
+            "tool_id": "cptacraw",
+            "tool_state": "{\"__page__\": null, \"resource\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sizehash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"md5hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"sha1hash\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"user\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "a87085ab-efcd-432e-b68a-96b93d28e2a3",
+            "uuid": "474c7958-2caf-41be-93b9-c83bb46540f8",
             "workflow_outputs": []
         },
         "2": {
             "annotation": "",
-            "content_id": "msconvert_raw_pulsar",
+            "content_id": "msconvert_raw_docker_wine",
             "errors": null,
             "id": 2,
             "input_connections": {
@@ -141,12 +140,12 @@
             },
             "inputs": [
                 {
-                    "description": "runtime parameter for tool MSConvert RAW (Pulsar - Windows)",
+                    "description": "runtime parameter for tool MSConvert RAW (Wine - Docker)",
                     "name": "input"
                 }
             ],
             "label": null,
-            "name": "MSConvert RAW (Pulsar - Windows)",
+            "name": "MSConvert RAW (Wine - Docker)",
             "outputs": [
                 {
                     "name": "output",
@@ -154,94 +153,42 @@
                 }
             ],
             "position": {
-                "left": 1068.5,
-                "top": 217
+                "left": 508.5,
+                "top": 282
             },
             "post_job_actions": {},
-            "tool_id": "msconvert_raw_pulsar",
-            "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"version\\\": \\\"pwiz-vc141-release-3_0_18320_db8142ed4\\\"}\"}",
+            "tool_id": "msconvert_raw_docker_wine",
+            "tool_state": "{\"__page__\": null, \"outfmt\": \"\\\"mzML.gz\\\"\", \"__rerun_remap_job_id__\": null, \"zlib\": \"\\\"true\\\"\", \"centroid\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"tag\\\": \\\"latest\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "29def483-05bd-4c88-a592-1d7e3555304d",
+            "uuid": "be4826c8-6b8c-419b-b8a6-da43f3c9498b",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "e56e9d2f-3969-4cfc-a028-2949b012ce35"
+                    "uuid": "3571280c-5e98-4097-b815-b9e2207ec516"
                 }
             ]
         },
         "3": {
             "annotation": "",
-            "content_id": "msgfplus4",
+            "content_id": "makereporters",
             "errors": null,
             "id": 3,
             "input_connections": {
                 "spectra": {
-                    "id": 1,
+                    "id": 2,
                     "output_name": "output"
                 }
             },
             "inputs": [
                 {
-                    "description": "runtime parameter for tool MS-GF+ (v2017.01.27) Indexed",
+                    "description": "runtime parameter for tool Extract reporter ions from mzML file",
                     "name": "spectra"
                 }
             ],
             "label": null,
-            "name": "MS-GF+ (v2017.01.27) Indexed",
-            "outputs": [
-                {
-                    "name": "output",
-                    "type": "mzid"
-                },
-                {
-                    "name": "stdout",
-                    "type": "txt"
-                }
-            ],
-            "position": {
-                "left": 532,
-                "top": 553
-            },
-            "post_job_actions": {
-                "HideDatasetActionoutput": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "output"
-                },
-                "HideDatasetActionstdout": {
-                    "action_arguments": {},
-                    "action_type": "HideDatasetAction",
-                    "output_name": "stdout"
-                }
-            },
-            "tool_id": "msgfplus4",
-            "tool_state": "{\"__page__\": null, \"e\": \"\\\"1\\\"\", \"seqdb\": \"\\\"mixed_human_broad-cptac-refseq-human+contaminants_20180629_decoy\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ntt\": \"\\\"1\\\"\", \"common_fixed_modifications\": \"[\\\"C2H3N1O1_C_fix_any_Carbamidomethyl\\\"]\", \"inst\": \"\\\"3\\\"\", \"t\": \"\\\"20.0\\\"\", \"precursor_ion_tol_units\": \"\\\"ppm\\\"\", \"custom_mods\": \"[]\", \"common_variable_modifications\": \"[\\\"O1_M_opt_any_Oxidation\\\"]\", \"advanced\": \"{\\\"memory\\\": \\\"4G\\\", \\\"minCharge\\\": \\\"2\\\", \\\"protocol\\\": \\\"4\\\", \\\"minLength\\\": \\\"6\\\", \\\"num_ptms\\\": \\\"3\\\", \\\"m\\\": \\\"3\\\", \\\"n\\\": \\\"1\\\", \\\"isotope_low\\\": \\\"0\\\", \\\"maxCharge\\\": \\\"3\\\", \\\"maxLength\\\": \\\"40\\\", \\\"addFeatures\\\": \\\"false\\\", \\\"isotope_high\\\": \\\"0\\\"}\"}",
-            "tool_version": "1.0",
-            "type": "tool",
-            "uuid": "6649d3b4-f763-4d5d-81a8-7224ec75e72f",
-            "workflow_outputs": []
-        },
-        "4": {
-            "annotation": "",
-            "content_id": "msgfplus6",
-            "errors": null,
-            "id": 4,
-            "input_connections": {
-                "i": {
-                    "id": 3,
-                    "output_name": "output"
-                }
-            },
-            "inputs": [
-                {
-                    "description": "runtime parameter for tool MS-GF+ (v2017.01.27) to TSV",
-                    "name": "i"
-                }
-            ],
-            "label": null,
-            "name": "MS-GF+ (v2017.01.27) to TSV",
+            "name": "Extract reporter ions from mzML file",
             "outputs": [
                 {
                     "name": "output",
@@ -249,8 +196,8 @@
                 }
             ],
             "position": {
-                "left": 716.137512,
-                "top": 702.137512
+                "left": 766,
+                "top": 433
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -259,21 +206,25 @@
                     "output_name": "output"
                 }
             },
-            "tool_id": "msgfplus6",
-            "tool_state": "{\"i\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"memory\\\": \\\"3G\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_id": "makereporters",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"ms3\": \"\\\"false\\\"\", \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
-            "uuid": "5ea1c7d7-f167-4cc0-8d3c-03ed875e52e5",
+            "uuid": "fbdbbedc-2595-41d2-b59f-c0cc1fdd40c6",
             "workflow_outputs": []
         },
-        "5": {
+        "4": {
             "annotation": "",
             "content_id": "psmfile_filter",
             "errors": null,
-            "id": 5,
+            "id": 4,
             "input_connections": {
                 "input": {
-                    "id": 4,
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "reporterfile": {
+                    "id": 3,
                     "output_name": "output"
                 }
             },
@@ -300,20 +251,71 @@
                 }
             ],
             "position": {
-                "left": 1024,
-                "top": 737
+                "left": 1061,
+                "top": 619
             },
-            "post_job_actions": {},
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
             "tool_id": "psmfile_filter",
-            "tool_state": "{\"__page__\": null, \"promsreport\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"reporterfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reporters\": \"\\\"\\\"\", \"threshold\": \"\\\"1.0\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"promsreport\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"reporterfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"reporters\": \"\\\"tmt11+2\\\"\", \"threshold\": \"\\\"1.0\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "c0d8553a-1ade-4726-b7b0-c0fa908d1f6a",
+            "uuid": "fab184c0-3e0f-4b99-9840-28e24dcb2335",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "addspecmd",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "input": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "spectra": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Add spectral metadata to PSM file",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Add spectral metadata to PSM file",
+                    "name": "spectra"
+                }
+            ],
+            "label": null,
+            "name": "Add spectral metadata to PSM file",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psm"
+                }
+            ],
+            "position": {
+                "left": 1156.5,
+                "top": 388
+            },
+            "post_job_actions": {},
+            "tool_id": "addspecmd",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "82fb5eaa-d4fc-46da-9728-27fc47f3b1e6",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "e379e064-e473-4a68-a30f-77853e178740"
+                    "uuid": "62ba6a64-ee42-473f-bccf-7d80e33f453e"
                 }
             ]
         },
@@ -351,20 +353,20 @@
                 }
             ],
             "position": {
-                "left": 1416,
-                "top": 661.5
+                "left": 1425,
+                "top": 553.5
             },
             "post_job_actions": {},
             "tool_id": "mzidreformat",
-            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"seqconfig\\\": \\\"seqdb.20180717.ini\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.1\\\", \\\"seqconfig\\\": \\\"seqdb.20230516.ini\\\"}\"}",
+            "tool_version": "1.2",
             "type": "tool",
-            "uuid": "078f6865-9f10-4474-a430-58a002857da2",
+            "uuid": "88eb8a1f-383d-477d-a603-024e8c3f2aea",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "139adc83-b894-4399-9844-2f4b834a17b0"
+                    "uuid": "db7b21c3-5024-4ae9-8ceb-79b2dfd5b95c"
                 }
             ]
         },
@@ -402,66 +404,100 @@
                 }
             ],
             "position": {
-                "left": 1721.75,
-                "top": 481.25
+                "left": 1679,
+                "top": 373
             },
             "post_job_actions": {},
             "tool_id": "qcmetrics",
-            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "45975560-c63a-4aba-89d1-e689dcddd65a",
+            "uuid": "d691f8d8-7b01-439d-bfd4-7d2c2f58e710",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "qcmetrics",
-                    "uuid": "81c8f650-0e5a-4710-a794-cd437b168c6b"
+                    "uuid": "e2b272cc-6369-4be7-90fa-3e325b762ab4"
                 }
             ]
         },
         "8": {
             "annotation": "",
-            "content_id": "psmfilecksum",
+            "content_id": "psmliftoverversions",
             "errors": null,
             "id": 8,
             "input_connections": {
-                "metricsinput": {
-                    "id": 7,
-                    "output_name": "qcmetrics"
-                },
                 "mzidinput": {
                     "id": 6,
                     "output_name": "output"
                 },
-                "psminput": {
-                    "id": 5,
-                    "output_name": "output"
-                },
-                "specinput": {
+                "mzmlinput": {
                     "id": 2,
                     "output_name": "output"
                 }
             },
             "inputs": [
                 {
-                    "description": "runtime parameter for tool Compute checksums for PSM analysis files",
-                    "name": "psminput"
-                },
-                {
-                    "description": "runtime parameter for tool Compute checksums for PSM analysis files",
-                    "name": "specinput"
-                },
-                {
-                    "description": "runtime parameter for tool Compute checksums for PSM analysis files",
+                    "description": "runtime parameter for tool PSM LiftOver Analysis Versions",
                     "name": "mzidinput"
                 },
                 {
-                    "description": "runtime parameter for tool Compute checksums for PSM analysis files",
-                    "name": "metricsinput"
+                    "description": "runtime parameter for tool PSM LiftOver Analysis Versions",
+                    "name": "mzmlinput"
                 }
             ],
             "label": null,
-            "name": "Compute checksums for PSM analysis files",
+            "name": "PSM LiftOver Analysis Versions",
+            "outputs": [
+                {
+                    "name": "psmversion",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 1985,
+                "top": 341
+            },
+            "post_job_actions": {},
+            "tool_id": "psmliftoverversions",
+            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"extralines\": \"[]\", \"mzmlinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "a691c923-d26a-4c98-84ad-efa7dc580c28",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "psmversion",
+                    "uuid": "4985bf7a-72c6-4e75-bc10-23964ca31cd6"
+                }
+            ]
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "filecksums1",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "files_0|input": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "files_1|input": {
+                    "id": 6,
+                    "output_name": "output"
+                },
+                "files_2|input": {
+                    "id": 7,
+                    "output_name": "qcmetrics"
+                },
+                "files_3|input": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Compute checksums for files",
             "outputs": [
                 {
                     "name": "output",
@@ -469,20 +505,20 @@
                 }
             ],
             "position": {
-                "left": 1941.5,
-                "top": 273.5
+                "left": 1890,
+                "top": 517
             },
             "post_job_actions": {},
-            "tool_id": "psmfilecksum",
-            "tool_state": "{\"__page__\": 0, \"mzidinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"metricsinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"psminput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"specinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_id": "filecksums1",
+            "tool_state": "{\"files\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 2, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 3, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
             "tool_version": "1.0",
             "type": "tool",
-            "uuid": "97ee7f20-156c-4780-9aca-5961476b3296",
+            "uuid": "ca4d9afd-09e0-45b4-84cf-1c9c941dec5e",
             "workflow_outputs": [
                 {
                     "label": null,
                     "output_name": "output",
-                    "uuid": "fc103372-fd1b-4bae-a560-04e5ac70d01a"
+                    "uuid": "455a8607-a27f-4e0c-8fb4-06df7b3a5bfc"
                 }
             ]
         }

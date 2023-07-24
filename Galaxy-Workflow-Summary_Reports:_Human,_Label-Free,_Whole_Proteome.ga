@@ -483,13 +483,13 @@
             "workflow_outputs": [
                 {
                     "label": null,
-                    "output_name": "logfile",
-                    "uuid": "746b9a3e-ba89-4357-828b-076f93742b2a"
+                    "output_name": "accessions",
+                    "uuid": "fea15d1a-e64c-4420-ad7b-e0bee25a5cc8"
                 },
                 {
                     "label": null,
-                    "output_name": "accessions",
-                    "uuid": "fea15d1a-e64c-4420-ad7b-e0bee25a5cc8"
+                    "output_name": "logfile",
+                    "uuid": "746b9a3e-ba89-4357-828b-076f93742b2a"
                 },
                 {
                     "label": null,

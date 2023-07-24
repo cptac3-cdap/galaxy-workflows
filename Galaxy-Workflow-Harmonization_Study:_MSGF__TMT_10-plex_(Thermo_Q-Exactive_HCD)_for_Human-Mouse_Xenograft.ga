@@ -300,8 +300,8 @@
                 }
             ],
             "position": {
-                "left": 889.7625122070312,
-                "top": 530.2624969482422
+                "left": 889.762512,
+                "top": 530.262497
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -461,8 +461,8 @@
                 }
             ],
             "position": {
-                "left": 1721.7625732421875,
-                "top": 481.2624969482422
+                "left": 1721.762573,
+                "top": 481.262497
             },
             "post_job_actions": {},
             "tool_id": "qcmetrics",

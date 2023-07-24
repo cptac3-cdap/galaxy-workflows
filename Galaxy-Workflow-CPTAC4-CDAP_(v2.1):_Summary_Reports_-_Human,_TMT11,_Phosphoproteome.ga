@@ -2,7 +2,7 @@
     "a_galaxy_workflow": "true",
     "annotation": "",
     "format-version": "0.1",
-    "name": "Summary Reports: Mouse, TMT11, Acetylome",
+    "name": "CPTAC4-CDAP (v2.1): Summary Reports - Human, TMT11, Phosphoproteome",
     "steps": {
         "0": {
             "annotation": "1",
@@ -170,7 +170,7 @@
                 }
             },
             "tool_id": "cdapreports_loadall",
-            "tool_state": "{\"__page__\": null, \"alignments_selector\": \"{\\\"pracc\\\": \\\"RefSeqUniProtIsoformBroadArtifact\\\", \\\"alignments\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"labels\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"maxrank\": \"\\\"1\\\"\", \"sample\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"peplen\": \"\\\"7\\\"\", \"psmthresh\": \"\\\"1.0\\\"\"}",
+            "tool_state": "{\"__page__\": null, \"alignments_selector\": \"{\\\"pracc\\\": \\\"GencodeENSPRefSeqUniProtIsoformCPTAC4Contaminant\\\", \\\"alignments\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"labels\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"maxrank\": \"\\\"1\\\"\", \"sample\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"peplen\": \"\\\"7\\\"\", \"psmthresh\": \"\\\"1.0\\\"\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "98d0df6b-5aa3-4f8d-b842-ed0626b4e146",
@@ -307,8 +307,8 @@
                 }
             },
             "tool_id": "cdapreports_genemap",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prmouse2gene.csv\\\"\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhuman2gene\\\"\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "ab875ec0-a8f5-4ed0-ad2f-4d3e845f7d0e",
             "workflow_outputs": []
@@ -350,8 +350,8 @@
                 }
             },
             "tool_id": "cdapreports_assayannotate",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"assaydate\\\": \\\"2023-5-24-15-35\\\"}\", \"__page__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "cc3767a5-667f-4e3e-a7a1-649079938368",
             "workflow_outputs": []
@@ -391,12 +391,12 @@
             ],
             "position": {
                 "left": 693,
-                "top": 1085
+                "top": 1084
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_parsnipfdr",
-            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"specfdrprecision\": \"\\\"3\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"initspecfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"speccnt\": \"\\\"2\\\"\", \"targetprotfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"genemap\": \"\\\"prmouse2gene.csv\\\"\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"speccnt\": \"\\\"2\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"initspecfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"specfdrprecision\": \"\\\"3\\\"\", \"targetprotfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"genemap\": \"\\\"prhuman2gene\\\"\", \"unique\": \"\\\"2\\\"\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "33cbdf9f-d6ea-48d2-8766-081e58f00c77",
             "workflow_outputs": [
@@ -607,8 +607,8 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_mayug",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genemap\": \"\\\"prmouse2gene.csv\\\"\", \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhuman2gene\\\"\", \"__rerun_remap_job_id__\": null, \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "1301b325-cc6a-4911-be35-6a1644474553",
             "workflow_outputs": [
@@ -646,7 +646,7 @@
             ],
             "position": {
                 "left": 1416,
-                "top": 1371
+                "top": 1374
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -656,7 +656,7 @@
                 }
             },
             "tool_id": "cdapreports_proremove",
-            "tool_state": "{\"regex\": \"\\\"^RefSeq$\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"keep\": \"\\\"true\\\"\", \"field\": \"\\\"source\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_state": "{\"regex\": \"\\\"^Gencode$\\\"\", \"__page__\": null, \"__rerun_remap_job_id__\": null, \"keep\": \"\\\"true\\\"\", \"field\": \"\\\"source\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "aad1b230-a10e-4ae5-9a5c-1cd88ebd93fc",
@@ -719,7 +719,7 @@
                 }
             },
             "tool_id": "cdapreports_parsnip",
-            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoRefSeqUniProtIsoform\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"false\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGencodeENSP\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"false\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "07219e27-0079-4ec5-a7c9-9f1474c2e7ff",
@@ -811,12 +811,12 @@
             ],
             "position": {
                 "left": 2403.5,
-                "top": 1437
+                "top": 1438
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Acetylpeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 4}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"NNLS+Check\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Phosphopeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "cf6d20e5-dc13-48fc-b25d-c0232183ca9e",
             "workflow_outputs": [
@@ -853,13 +853,13 @@
                 }
             ],
             "position": {
-                "left": 2405.5,
+                "left": 2406.5,
                 "top": 1561
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Acetylpeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 4}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Phosphopeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "50bb584c-f57e-4964-9648-2a9ccb562e50",
             "workflow_outputs": [
@@ -896,13 +896,13 @@
                 }
             ],
             "position": {
-                "left": 2412.5,
+                "left": 2411.5,
                 "top": 1678
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"AcetylsiteCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 5}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"NNLS+Check\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"PhosphositeCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 1}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "32ff246d-adcb-44c5-8b49-ff303c053ed2",
             "workflow_outputs": [
@@ -944,8 +944,8 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_pepiontmt10",
-            "tool_state": "{\"__page__\": null, \"__rerun_remap_job_id__\": null, \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"AcetylsiteCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 5}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"PhosphositeCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"localized\\\": \\\"true\\\", \\\"__current_case__\\\": 1}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "f729f954-2242-4525-a263-25019871351b",
             "workflow_outputs": [

@@ -512,8 +512,8 @@
                 }
             ],
             "position": {
-                "left": 1983.7750244140625,
-                "top": 509.2749938964844
+                "left": 1983.775024,
+                "top": 509.274994
             },
             "post_job_actions": {},
             "tool_id": "qcmetrics",

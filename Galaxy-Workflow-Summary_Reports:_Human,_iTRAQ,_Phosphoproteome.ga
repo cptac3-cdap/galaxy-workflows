@@ -483,13 +483,13 @@
             "workflow_outputs": [
                 {
                     "label": null,
-                    "output_name": "logfile",
-                    "uuid": "746b9a3e-ba89-4357-828b-076f93742b2a"
+                    "output_name": "accessions",
+                    "uuid": "f7e59c2f-e969-4341-82d0-cbd32ec7faef"
                 },
                 {
                     "label": null,
-                    "output_name": "accessions",
-                    "uuid": "f7e59c2f-e969-4341-82d0-cbd32ec7faef"
+                    "output_name": "logfile",
+                    "uuid": "746b9a3e-ba89-4357-828b-076f93742b2a"
                 },
                 {
                     "label": null,
@@ -695,6 +695,11 @@
             "workflow_outputs": [
                 {
                     "label": null,
+                    "output_name": "accessions",
+                    "uuid": "4ddc1c00-c3db-4ef5-9d03-a08006b2ac15"
+                },
+                {
+                    "label": null,
                     "output_name": "logfile",
                     "uuid": "c6e3e298-023f-4726-9887-1e169bcd5f8f"
                 },
@@ -702,11 +707,6 @@
                     "label": null,
                     "output_name": "matrix",
                     "uuid": "dc470587-02f5-4d31-acfc-40c722c80cc0"
-                },
-                {
-                    "label": null,
-                    "output_name": "accessions",
-                    "uuid": "4ddc1c00-c3db-4ef5-9d03-a08006b2ac15"
                 }
             ]
         },
