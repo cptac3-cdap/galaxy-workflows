@@ -443,7 +443,7 @@
             },
             "post_job_actions": {},
             "tool_id": "mzidreformat",
-            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"human\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.1\\\", \\\"seqconfig\\\": \\\"seqdb.20230516.ini\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"parser\": \"\\\"true\\\"\", \"seqdb\": \"\\\"xenograft\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"cdapversion\\\": \\\"2.1\\\", \\\"seqconfig\\\": \\\"seqdb.20230516.ini\\\"}\"}",
             "tool_version": "1.2",
             "type": "tool",
             "uuid": "428a2965-79af-48d4-a2f5-846d63767ec9",
