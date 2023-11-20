@@ -1,0 +1,1110 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "CPTAC4-CDAP (v2): Summary Reports - Human, TMT11, Ubiquitylome",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": "mzIdentML PSM Datafiles",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 110,
+                "top": 200
+            },
+            "tool_id": null,
+            "tool_state": "{}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "a5728fb9-eb97-460e-afe3-bdf4afb3c9d1",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "bd8cd1ad-1030-4e50-9b98-111fe1b7fc7e"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [],
+            "label": "Sample <-> Spectrum File, Label Mapping",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 110,
+                "top": 281
+            },
+            "tool_id": null,
+            "tool_state": "{}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "5ff1cd5d-8225-496f-9639-bc0d96b47dde",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "d486e56a-0bd4-4f00-a7c6-490323e98249"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [],
+            "label": "Label Reagent Batch",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 109,
+                "top": 382
+            },
+            "tool_id": null,
+            "tool_state": "{}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "71059c3a-b75e-4e95-87ec-3ca4ee8d38bd",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "3a9f4903-8c73-4f8a-8284-d53038e60e05"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [],
+            "label": "QCMetrics",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 112,
+                "top": 472
+            },
+            "tool_id": null,
+            "tool_state": "{}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "c655d286-fb84-43d2-a941-27ee2a029118",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "11ffe42d-1369-433a-a89b-ffffa74f298f"
+                }
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": "cdapreports_loadall",
+            "errors": null,
+            "id": 4,
+            "input_connections": {
+                "input": {
+                    "id": 0,
+                    "output_name": "output"
+                },
+                "labels_0|input": {
+                    "id": 2,
+                    "output_name": "output"
+                },
+                "sample": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Import PSMs to PSMDb database",
+                    "name": "sample"
+                },
+                {
+                    "description": "runtime parameter for tool Import PSMs to PSMDb database",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Import PSMs to PSMDb database",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                },
+                {
+                    "name": "samplecsv",
+                    "type": "csv"
+                }
+            ],
+            "position": {
+                "left": 327.5,
+                "top": 229
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                },
+                "HideDatasetActionsamplecsv": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "samplecsv"
+                }
+            },
+            "tool_id": "cdapreports_loadall",
+            "tool_state": "{\"__page__\": null, \"alignments_selector\": \"{\\\"pracc\\\": \\\"RefSeqUniProtIsoformBroadArtifact\\\", \\\"alignments\\\": \\\"true\\\", \\\"__current_case__\\\": 0}\", \"__rerun_remap_job_id__\": null, \"labels\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"maxrank\": \"\\\"1\\\"\", \"sample\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"peplen\": \"\\\"7\\\"\", \"psmthresh\": \"\\\"1.0\\\"\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "d62019be-02e0-4450-a243-7b997fd4a763",
+            "workflow_outputs": []
+        },
+        "5": {
+            "annotation": "",
+            "content_id": "cdapreports_sample1",
+            "errors": null,
+            "id": 5,
+            "input_connections": {
+                "input": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "samples": {
+                    "id": 4,
+                    "output_name": "samplecsv"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Label Spectral Data with Sample Identifiers",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Label Spectral Data with Sample Identifiers",
+                    "name": "samples"
+                }
+            ],
+            "label": null,
+            "name": "Label Spectral Data with Sample Identifiers",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 531,
+                "top": 435
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_sample1",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"samples\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "4307fa9d-d597-41b4-a7f4-dee4d34287b6",
+            "workflow_outputs": []
+        },
+        "6": {
+            "annotation": "",
+            "content_id": "cdapreports_labeldecoy",
+            "errors": null,
+            "id": 6,
+            "input_connections": {
+                "input": {
+                    "id": 5,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Label Decoy Proteins and Peptides",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Label Decoy Proteins and Peptides",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 619.5,
+                "top": 606
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_labeldecoy",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"__page__\": 0}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "52e1c5a7-73cc-49d3-86d7-d25a1cdd978b",
+            "workflow_outputs": []
+        },
+        "7": {
+            "annotation": "",
+            "content_id": "cdapreports_genemap",
+            "errors": null,
+            "id": 7,
+            "input_connections": {
+                "input": {
+                    "id": 6,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Group proteins by gene",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Group proteins by gene",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 721,
+                "top": 771
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_genemap",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prhuman2gene.csv\\\"\", \"__page__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "5feb2321-4fb6-4380-9f6f-5dc3139fe068",
+            "workflow_outputs": []
+        },
+        "8": {
+            "annotation": "",
+            "content_id": "cdapreports_assayannotate",
+            "errors": null,
+            "id": 8,
+            "input_connections": {
+                "input": {
+                    "id": 7,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Annotate Genes, Proteins, and Peptides with CPTAC Assays",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Annotate Genes, Proteins, and Peptides with CPTAC Assays",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 818,
+                "top": 903
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_assayannotate",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "6cbf427f-ed5d-4b22-82ba-7a5986aa930f",
+            "workflow_outputs": []
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "cdapreports_parsnipfdr",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "input": {
+                    "id": 8,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Spec. FDR est. for gene inference by parsimony with bounded gene FDR",
+                    "name": "initspecfdr"
+                },
+                {
+                    "description": "runtime parameter for tool Spec. FDR est. for gene inference by parsimony with bounded gene FDR",
+                    "name": "targetprotfdr"
+                },
+                {
+                    "description": "runtime parameter for tool Spec. FDR est. for gene inference by parsimony with bounded gene FDR",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Spec. FDR est. for gene inference by parsimony with bounded gene FDR",
+            "outputs": [
+                {
+                    "name": "mayu",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 693,
+                "top": 1085
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_parsnipfdr",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"specfdrprecision\": \"\\\"3\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"initspecfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"speccnt\": \"\\\"2\\\"\", \"targetprotfdr\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"genemap\": \"\\\"prhuman2gene.csv\\\"\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "60d8ba91-542b-478a-85f2-25de0427bba6",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "mayu",
+                    "uuid": "dcf7764e-5927-4a0a-9bdf-aea641f92864"
+                }
+            ]
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "cdapreports_peptides",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "input": {
+                    "id": 8,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Peptide Summary Report",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Peptide Summary Report",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1415,
+                "top": 949
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_peptides",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "767d6c18-3e16-4483-897e-cbb69e6da66b",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "e7bf5ea9-4326-4570-999f-3b1ed1d277a2"
+                }
+            ]
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "cdapreports_parsnip",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "input": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "specfdrselect": {
+                    "id": 9,
+                    "output_name": "mayu"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Gene/Protein inference by parsimony",
+                    "name": "specfdrselect"
+                },
+                {
+                    "description": "runtime parameter for tool Gene/Protein inference by parsimony",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Gene/Protein inference by parsimony",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                },
+                {
+                    "name": "logfile",
+                    "type": "txt"
+                },
+                {
+                    "name": "matrix",
+                    "type": "csv"
+                },
+                {
+                    "name": "accessions",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 998.5,
+                "top": 1079
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_parsnip",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGene\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"true\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "8ba9cdd6-6143-47c5-bc99-f67a47c1a9ed",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "accessions",
+                    "uuid": "d23e334b-7fdb-4e1a-942e-5440f2fada88"
+                },
+                {
+                    "label": null,
+                    "output_name": "logfile",
+                    "uuid": "e39c0ddb-2b73-4055-81e1-10e62120a6ca"
+                },
+                {
+                    "label": null,
+                    "output_name": "matrix",
+                    "uuid": "35b899fa-24ec-4a4f-894b-b33d10040fcc"
+                }
+            ]
+        },
+        "12": {
+            "annotation": "",
+            "content_id": "cdapreports_summary",
+            "errors": null,
+            "id": 12,
+            "input_connections": {
+                "input": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Gene/Protein Summary Report",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Gene/Protein Summary Report",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1414.5,
+                "top": 1085
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_summary",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"true\\\"\", \"__page__\": 0}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "bdf78677-bc9a-4d43-aff3-922fe8999935",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "b363bca6-4370-4f57-b9bc-5db9398e29e6"
+                }
+            ]
+        },
+        "13": {
+            "annotation": "",
+            "content_id": "cdapreports_mayug",
+            "errors": null,
+            "id": 13,
+            "input_connections": {
+                "input": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Estimate Gene FDR",
+                    "name": "input"
+                },
+                {
+                    "description": "runtime parameter for tool Estimate Gene FDR",
+                    "name": "accessions"
+                }
+            ],
+            "label": null,
+            "name": "Estimate Gene FDR",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 1414,
+                "top": 1214
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_mayug",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genemap\": \"\\\"prhuman2gene.csv\\\"\", \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "0b3ce58b-582d-457e-97a2-62554a96aa40",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "67534734-a925-4853-926d-62b3e58576f9"
+                }
+            ]
+        },
+        "14": {
+            "annotation": "",
+            "content_id": "cdapreports_proremove",
+            "errors": null,
+            "id": 14,
+            "input_connections": {
+                "input": {
+                    "id": 11,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Remove proteins",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Remove proteins",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 1416,
+                "top": 1371
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_proremove",
+            "tool_state": "{\"regex\": \"\\\"^RefSeq$\\\"\", \"__page__\": 0, \"__rerun_remap_job_id__\": null, \"keep\": \"\\\"true\\\"\", \"field\": \"\\\"source\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "0ce3aba6-cbba-458c-a5e9-fca05a8a7a45",
+            "workflow_outputs": []
+        },
+        "15": {
+            "annotation": "",
+            "content_id": "cdapreports_parsnip",
+            "errors": null,
+            "id": 15,
+            "input_connections": {
+                "input": {
+                    "id": 14,
+                    "output_name": "output"
+                },
+                "specfdrselect": {
+                    "id": 9,
+                    "output_name": "mayu"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Gene/Protein inference by parsimony",
+                    "name": "specfdrselect"
+                },
+                {
+                    "description": "runtime parameter for tool Gene/Protein inference by parsimony",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Gene/Protein inference by parsimony",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                },
+                {
+                    "name": "logfile",
+                    "type": "txt"
+                },
+                {
+                    "name": "matrix",
+                    "type": "csv"
+                },
+                {
+                    "name": "accessions",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "left": 1684.5,
+                "top": 1382
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_parsnip",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoRefSeqUniProtIsoform\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"false\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "dbbfd579-0101-4ec3-9dc9-359e10ecfcda",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "accessions",
+                    "uuid": "04d1a86b-5012-463a-9557-a749a9ea18ae"
+                },
+                {
+                    "label": null,
+                    "output_name": "logfile",
+                    "uuid": "61788b69-52d6-4e34-9c09-657b7660e1d2"
+                },
+                {
+                    "label": null,
+                    "output_name": "matrix",
+                    "uuid": "bc6b3034-ec13-45d4-82f6-7023e137fba0"
+                }
+            ]
+        },
+        "16": {
+            "annotation": "",
+            "content_id": "cdapreports_peptrypterm",
+            "errors": null,
+            "id": 16,
+            "input_connections": {
+                "input": {
+                    "id": 15,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Annotate/Remove Peptides by Tryptic Termini",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Annotate/Remove Peptides by Tryptic Termini",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "psmdb"
+                }
+            ],
+            "position": {
+                "left": 2028.5,
+                "top": 1613
+            },
+            "post_job_actions": {
+                "HideDatasetActionoutput": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "output"
+                }
+            },
+            "tool_id": "cdapreports_peptrypterm",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"mode\": \"\\\"--annotate\\\"\", \"__page__\": 0}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "0ea8587e-df65-4862-bbbe-2d91ad5ffaef",
+            "workflow_outputs": []
+        },
+        "17": {
+            "annotation": "",
+            "content_id": "cdapreports_pepiontmt10",
+            "errors": null,
+            "id": 17,
+            "input_connections": {
+                "input": {
+                    "id": 16,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Peptide Ion Isotope-Labeling Quantitation",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Peptide Ion Isotope-Labeling Quantitation",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2403.5,
+                "top": 1438
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_pepiontmt10",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"NNLS+Check\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Ubiquitylpeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 6}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
+            "type": "tool",
+            "uuid": "21d6addc-5662-41b6-9699-fb0490db5145",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "5c1ce9ce-a03b-44e7-af03-e6f5e4c41d00"
+                }
+            ]
+        },
+        "18": {
+            "annotation": "",
+            "content_id": "cdapreports_pepiontmt10",
+            "errors": null,
+            "id": 18,
+            "input_connections": {
+                "input": {
+                    "id": 16,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Peptide Ion Isotope-Labeling Quantitation",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Peptide Ion Isotope-Labeling Quantitation",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2406.5,
+                "top": 1561
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_pepiontmt10",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"Ubiquitylpeptide\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 6}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
+            "type": "tool",
+            "uuid": "d124a61c-5af8-40e5-970d-6b20bf6c0074",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "be90dfc7-c0ca-4fe6-9dd0-387809eb05da"
+                }
+            ]
+        },
+        "19": {
+            "annotation": "",
+            "content_id": "cdapreports_pepiontmt10",
+            "errors": null,
+            "id": 19,
+            "input_connections": {
+                "input": {
+                    "id": 16,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Peptide Ion Isotope-Labeling Quantitation",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Peptide Ion Isotope-Labeling Quantitation",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2411.5,
+                "top": 1678
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_pepiontmt10",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"NNLS+Check\\\"\", \"labels\": \"\\\"TMT11+2\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"UbiquitylsiteCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 7}\", \"nocorrection\": \"\\\"true\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
+            "type": "tool",
+            "uuid": "ebae4ed0-99c2-4340-af6f-63074195d1a1",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "4a96d639-08ee-41c6-9c42-26baa5ed62e3"
+                }
+            ]
+        },
+        "20": {
+            "annotation": "",
+            "content_id": "cdapreports_pepiontmt10",
+            "errors": null,
+            "id": 20,
+            "input_connections": {
+                "input": {
+                    "id": 16,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Peptide Ion Isotope-Labeling Quantitation",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Peptide Ion Isotope-Labeling Quantitation",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "left": 2413.5,
+                "top": 1796
+            },
+            "post_job_actions": {},
+            "tool_id": "cdapreports_pepiontmt10",
+            "tool_state": "{\"__page__\": null, \"correction\": \"\\\"None\\\"\", \"labels\": \"\\\"TMT11\\\"\", \"report_selector\": \"{\\\"report\\\": \\\"UbiquitylsiteCombination\\\", \\\"specific\\\": \\\"true\\\", \\\"__current_case__\\\": 7}\", \"nocorrection\": \"\\\"false\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
+            "type": "tool",
+            "uuid": "cfe61e53-9feb-4f65-be68-614e2e9cffe8",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "defd9a52-b4d8-4c32-81ae-5c2e0a441f31"
+                }
+            ]
+        },
+        "21": {
+            "annotation": "",
+            "content_id": "qcreport",
+            "errors": null,
+            "id": 21,
+            "input_connections": {
+                "expdesinput": {
+                    "id": 4,
+                    "output_name": "samplecsv"
+                },
+                "mayuinput": {
+                    "id": 13,
+                    "output_name": "output"
+                },
+                "peptideinput": {
+                    "id": 10,
+                    "output_name": "output"
+                },
+                "qcmetricsinput": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "quantinput": {
+                    "id": 19,
+                    "output_name": "output"
+                },
+                "summaryinput": {
+                    "id": 12,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "peptideinput"
+                },
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "qcmetricsinput"
+                },
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "quantinput"
+                },
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "mayuinput"
+                },
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "summaryinput"
+                },
+                {
+                    "description": "runtime parameter for tool QCReport",
+                    "name": "expdesinput"
+                }
+            ],
+            "label": null,
+            "name": "QCReport",
+            "outputs": [
+                {
+                    "name": "htmlreport",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "left": 2817,
+                "top": 1197
+            },
+            "post_job_actions": {},
+            "tool_id": "qcreport",
+            "tool_state": "{\"dochecks\": \"\\\"true\\\"\", \"__page__\": null, \"peptideinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"qcmetricsinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"quantinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"mayuinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"summaryinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"expdesinput\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "87c11407-5bab-4555-ba53-97c33ffbdfe5",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "htmlreport",
+                    "uuid": "7227b389-8856-47f5-ab12-49b238936aa2"
+                }
+            ]
+        },
+        "22": {
+            "annotation": "",
+            "content_id": "filecksums1",
+            "errors": null,
+            "id": 22,
+            "input_connections": {
+                "files_0|input": {
+                    "id": 10,
+                    "output_name": "output"
+                },
+                "files_1|input": {
+                    "id": 12,
+                    "output_name": "output"
+                },
+                "files_2|input": {
+                    "id": 17,
+                    "output_name": "output"
+                },
+                "files_3|input": {
+                    "id": 18,
+                    "output_name": "output"
+                },
+                "files_4|input": {
+                    "id": 19,
+                    "output_name": "output"
+                },
+                "files_5|input": {
+                    "id": 20,
+                    "output_name": "output"
+                },
+                "files_6|input": {
+                    "id": 21,
+                    "output_name": "htmlreport"
+                },
+                "files_7|input": {
+                    "id": 3,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Compute checksums for files",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "cksum"
+                }
+            ],
+            "position": {
+                "left": 3182.5,
+                "top": 1070
+            },
+            "post_job_actions": {},
+            "tool_id": "filecksums1",
+            "tool_state": "{\"files\": \"[{\\\"__index__\\\": 0, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 1, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 2, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 3, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 4, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 5, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 6, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}, {\\\"__index__\\\": 7, \\\"input\\\": {\\\"__class__\\\": \\\"RuntimeValue\\\"}}]\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.0",
+            "type": "tool",
+            "uuid": "cf963b9b-edad-466f-843b-c28756cc9f21",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "7b379f45-38a9-4098-a700-799695d697e8"
+                }
+            ]
+        }
+    },
+    "tags": []
+}
