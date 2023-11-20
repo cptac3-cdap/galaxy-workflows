@@ -151,7 +151,7 @@
                 }
             },
             "tool_id": "msgfplus4",
-            "tool_state": "{\"__page__\": null, \"e\": \"\\\"1\\\"\", \"seqdb\": \"\\\"mixed_other_broad-cptac-refseq-human+mouse+contaminants_20180629_decoy\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ntt\": \"\\\"1\\\"\", \"common_fixed_modifications\": \"[\\\"C2H3N1O1_C_fix_any_Carbamidomethyl\\\", \\\"229.162932_*_fix_N-term_TMT6plex\\\", \\\"229.162932_K_fix_any_TMT6plex\\\"]\", \"inst\": \"\\\"3\\\"\", \"t\": \"\\\"20.0\\\"\", \"precursor_ion_tol_units\": \"\\\"ppm\\\"\", \"custom_mods\": \"[{\\\"fix_or_opt\\\": \\\"opt\\\", \\\"formula_or_mass\\\": \\\"-187.152366\\\", \\\"aa_specificity\\\": [\\\"K\\\"], \\\"mod_name\\\": \\\"Acetyl\\\", \\\"__index__\\\": 0, \\\"position_specificity\\\": \\\"any\\\"}]\", \"common_variable_modifications\": \"[\\\"O1_M_opt_any_Oxidation\\\"]\", \"advanced\": \"{\\\"memory\\\": \\\"4G\\\", \\\"minCharge\\\": \\\"2\\\", \\\"protocol\\\": \\\"4\\\", \\\"minLength\\\": \\\"6\\\", \\\"num_ptms\\\": \\\"3\\\", \\\"m\\\": \\\"3\\\", \\\"n\\\": \\\"1\\\", \\\"isotope_low\\\": \\\"0\\\", \\\"maxCharge\\\": \\\"3\\\", \\\"maxLength\\\": \\\"40\\\", \\\"addFeatures\\\": \\\"false\\\", \\\"isotope_high\\\": \\\"1\\\"}\"}",
+            "tool_state": "{\"__page__\": null, \"e\": \"\\\"1\\\"\", \"seqdb\": \"\\\"mixed_other_broad-cptac-refseq-human+mouse+contaminants_20180629_decoy\\\"\", \"__rerun_remap_job_id__\": null, \"spectra\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"ntt\": \"\\\"1\\\"\", \"common_fixed_modifications\": \"[\\\"C2H3N1O1_C_fix_any_Carbamidomethyl\\\", \\\"229.162932_*_fix_N-term_TMT6plex\\\", \\\"229.162932_K_fix_any_TMT6plex\\\"]\", \"inst\": \"\\\"3\\\"\", \"t\": \"\\\"20.0\\\"\", \"precursor_ion_tol_units\": \"\\\"ppm\\\"\", \"custom_mods\": \"[{\\\"fix_or_opt\\\": \\\"opt\\\", \\\"formula_or_mass\\\": \\\"-187.152366\\\", \\\"aa_specificity\\\": [\\\"K\\\"], \\\"mod_name\\\": \\\"AcetylInsteadOfTMT6plex\\\", \\\"__index__\\\": 0, \\\"position_specificity\\\": \\\"any\\\"}]\", \"common_variable_modifications\": \"[\\\"O1_M_opt_any_Oxidation\\\"]\", \"advanced\": \"{\\\"memory\\\": \\\"4G\\\", \\\"minCharge\\\": \\\"2\\\", \\\"protocol\\\": \\\"4\\\", \\\"minLength\\\": \\\"6\\\", \\\"num_ptms\\\": \\\"3\\\", \\\"m\\\": \\\"3\\\", \\\"n\\\": \\\"1\\\", \\\"isotope_low\\\": \\\"0\\\", \\\"maxCharge\\\": \\\"3\\\", \\\"maxLength\\\": \\\"40\\\", \\\"addFeatures\\\": \\\"false\\\", \\\"isotope_high\\\": \\\"1\\\"}\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "fe03a801-e1a7-4280-8654-1ac0cbe6fc78",
@@ -226,8 +226,8 @@
                 }
             ],
             "position": {
-                "left": 716.166672,
-                "top": 702.166672
+                "left": 716.166687,
+                "top": 702.166687
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
