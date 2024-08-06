@@ -307,8 +307,8 @@
                 }
             },
             "tool_id": "cdapreports_genemap",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\", \"__page__\": null}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhumanmouse2gene\\\"\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "ab875ec0-a8f5-4ed0-ad2f-4d3e845f7d0e",
             "workflow_outputs": []
@@ -350,8 +350,8 @@
                 }
             },
             "tool_id": "cdapreports_assayannotate",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"assaydate\\\": \\\"2023-5-24-15-35\\\"}\", \"__page__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "cc3767a5-667f-4e3e-a7a1-649079938368",
             "workflow_outputs": []
@@ -693,8 +693,8 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_mayug",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\", \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": null}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhumanmouse2gene\\\"\", \"__rerun_remap_job_id__\": null, \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "1301b325-cc6a-4911-be35-6a1644474553",
             "workflow_outputs": [
@@ -848,7 +848,7 @@
                 }
             },
             "tool_id": "cdapreports_parsnip",
-            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoRefSeqUniProtIsoform\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"false\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
+            "tool_state": "{\"__page__\": null, \"pracc\": \"\\\"OrthoGencodeENSP\\\"\", \"tieresolution\": \"\\\"Consistent\\\"\", \"__rerun_remap_job_id__\": null, \"bygene\": \"\\\"false\\\"\", \"speccnt\": \"\\\"2\\\"\", \"specfdrselect\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"pepweights\": \"\\\"FDR\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"unique\": \"\\\"2\\\"\", \"specfdr\": \"\\\"0.0\\\"\", \"mode\": \"[\\\"Stats\\\", \\\"Matrix\\\", \\\"Dump\\\", \\\"Filter\\\"]\"}",
             "tool_version": "1.0",
             "type": "tool",
             "uuid": "07219e27-0079-4ec5-a7c9-9f1474c2e7ff",

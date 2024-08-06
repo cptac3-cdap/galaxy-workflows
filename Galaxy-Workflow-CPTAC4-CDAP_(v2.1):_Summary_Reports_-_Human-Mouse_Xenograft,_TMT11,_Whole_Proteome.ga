@@ -307,8 +307,8 @@
                 }
             },
             "tool_id": "cdapreports_genemap",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhumanmouse2gene\\\"\", \"__rerun_remap_job_id__\": null, \"decoyprefix\": \"\\\"XXX_\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "833b8354-b7c5-40f8-bae3-3858624410d9",
             "workflow_outputs": []
@@ -350,8 +350,8 @@
                 }
             },
             "tool_id": "cdapreports_assayannotate",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"advanced\": \"{\\\"assaydate\\\": \\\"2023-5-24-15-35\\\"}\", \"__page__\": null}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "b80281d5-723c-478a-9dd9-2fff93c15147",
             "workflow_outputs": []
@@ -539,8 +539,8 @@
                 }
             ],
             "position": {
-                "left": 1178.5,
-                "top": 1021
+                "left": 1179.5,
+                "top": 1020
             },
             "post_job_actions": {
                 "HideDatasetActionoutput": {
@@ -822,8 +822,8 @@
             },
             "post_job_actions": {},
             "tool_id": "cdapreports_mayug",
-            "tool_state": "{\"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"genemap\": \"\\\"prhumanmouse2gene.csv\\\"\", \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0}",
-            "tool_version": "1.0",
+            "tool_state": "{\"__page__\": null, \"genemap\": \"\\\"prhumanmouse2gene\\\"\", \"__rerun_remap_job_id__\": null, \"accessions\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"advanced\": \"{\\\"genemapdate\\\": \\\"2023-05-24\\\"}\"}",
+            "tool_version": "1.1",
             "type": "tool",
             "uuid": "f3c36369-24b9-4945-98b3-9ea5ea381bfe",
             "workflow_outputs": [
