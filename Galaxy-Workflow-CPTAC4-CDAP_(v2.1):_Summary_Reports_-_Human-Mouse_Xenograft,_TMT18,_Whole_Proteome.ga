@@ -5,7 +5,7 @@
     "name": "CPTAC4-CDAP (v2.1): Summary Reports - Human-Mouse Xenograft, TMT18, Whole Proteome",
     "steps": {
         "0": {
-            "annotation": "",
+            "annotation": "1",
             "content_id": null,
             "errors": null,
             "id": 0,
@@ -32,7 +32,7 @@
             ]
         },
         "1": {
-            "annotation": "",
+            "annotation": "2",
             "content_id": null,
             "errors": null,
             "id": 1,
@@ -59,7 +59,7 @@
             ]
         },
         "2": {
-            "annotation": "",
+            "annotation": "3",
             "content_id": null,
             "errors": null,
             "id": 2,
@@ -86,7 +86,7 @@
             ]
         },
         "3": {
-            "annotation": "",
+            "annotation": "4",
             "content_id": null,
             "errors": null,
             "id": 3,
